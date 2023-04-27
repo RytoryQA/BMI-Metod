@@ -1,10 +1,10 @@
 public class BmiService {
-    public int calculate(double a, double b) {
+    public int calculate(double weight, double height) {
         int result;
-        double p = b * b;
-        if (3 < 7) {
-            result = (int) (a / p);
-        }
+        double height2 = height * height; //  ИМТ = вес / рост 2
+
+            result = (int) (weight / height2);
+
         return result;
     }
 }
